@@ -43,3 +43,32 @@ body.mem{background:var(--cream);color:var(--ink);font-size:23px;line-height:1.7
 @media(max-width:560px){.cards4{grid-template-columns:1fr}.mem{font-size:21px}.mhero{padding:150px 0 110px}.mtop .btn{padding:11px 18px;font-size:16px}}
 .hero-in{max-width:none}.hero-in>h1,.hero-in>p{max-width:760px}.mhero .garl.r{width:min(20vw,260px);height:auto;top:60px}
 .exp>svg,.exp .orb{height:110px;width:auto;max-width:150px}.exp .orb{width:110px}
+/* ===== MOBILE-FIRST FIX ===== */
+@media(max-width:700px){
+body.mem{font-size:17px;line-height:1.6}
+.mem section{padding:44px 0}
+.mem h2{font-size:29px;line-height:1.15;margin-bottom:.55em}
+.mem h3{font-size:23px}.mem h4{font-size:18px;margin-bottom:.6em}
+.mem p{margin-bottom:.8em}.mem .lead{font-size:19px;line-height:1.5}
+.mtop{position:relative;background:var(--paper)}.mtop .wrap{height:68px}.logo{height:44px}
+.mtop .btn{padding:10px 16px;font-size:15px}
+.mhero{padding:36px 0 56px;background:linear-gradient(180deg,var(--paper),#F7E4B3)}
+.mhero h1{font-size:34px;line-height:1.1;margin-bottom:.5em}
+.mhero .garl.r{display:none}.mhero .deco-l{display:none}
+.btns{margin-top:20px;gap:12px}.btns .btn{width:100%;text-align:center;font-size:17px;padding:14px 20px}
+.cards4{gap:12px;margin-top:24px}.card{padding:18px 20px;display:grid;grid-template-columns:56px 1fr;column-gap:16px;align-items:center;border-radius:16px}
+.card svg{width:52px;height:52px;grid-row:1/3;margin:0}.card h3{margin:0 0 4px;font-size:20px}.card p{font-size:15.5px;line-height:1.45}
+.exps{gap:14px;margin-top:22px}.exp{padding:22px 20px;border-radius:18px}
+.exp>svg,.exp .orb{height:64px;width:auto}.exp .orb{width:64px}
+.exp p{font-size:16px}
+.art-side img{max-width:240px}.art-side .rot{display:none}
+.price b{font-size:64px}.price{font-size:24px}
+.btn{font-size:17px}.sec-cta .btn,.intro .btn,.final2 .btn{width:100%;text-align:center}
+.plan{padding:24px 20px;border-radius:20px}
+.mem summary{font-size:19px;padding:12px 0}.mem details p{font-size:16px}
+.portrait{width:150px;font-size:50px;border-radius:75px 75px 12px 12px}
+.edit .wrap{padding-left:16px}
+.final2 .garl{display:none}.flogo{height:60px}
+.mem footer .wrap{font-size:15px}
+.mock-body{padding:14px}.mrow b{font-size:17px}.mrow small{font-size:14px}
+}
