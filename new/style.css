@@ -337,5 +337,3 @@ summary:after{color:var(--ember)}
 footer{background:#222812;color:#CFC9AE}
 .bar{background:rgba(255,249,236,.97)!important;border-top-color:var(--gold)!important}.bar b{color:var(--ember)!important}
 .av{width:84px;height:84px}.voices .q{grid-template-columns:100px 1fr}
-@media(max-width:760px){.top nav a:not(.btn):first-child{display:inline;font-size:16px}.top nav{gap:14px}.top .btn{font-size:16px;padding:10px 18px}}
-.homeonly{font-size:17px;font-weight:500;text-decoration:none;color:inherit;border-bottom:1px solid currentColor;padding-bottom:2px}
