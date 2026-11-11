@@ -74,3 +74,4 @@ body.mem{font-size:17px;line-height:1.6}
 }
 @media(max-width:980px){.mtop nav a:not(.btn):first-child{display:inline;font-size:16px}.mtop nav{gap:14px}}
 .homeback{color:#E9DFC2;font-size:17px;text-decoration:none;border-bottom:1px solid #D49A2A}
+.mtop nav .homeonly{display:inline!important;font-size:17px;font-weight:500;color:var(--olive-d);border-bottom:1px solid var(--ember);text-decoration:none}
