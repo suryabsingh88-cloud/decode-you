@@ -63,6 +63,7 @@ header a.back{color:var(--cream);text-decoration:none;font-size:15px}
 .count div{background:#ffffff12;border:1px solid #D49A2A66;border-radius:14px;padding:10px 16px;min-width:130px;backdrop-filter:blur(2px)}
 .count b{display:block;font-family:Fraunces,serif;font-size:34px;color:var(--amber);line-height:1}
 .count span{font-size:13px;color:#EADFC0}
+.ends{color:var(--amber);font-size:15px;margin:-14px 0 24px;letter-spacing:.04em}
 
 section{padding:60px 0;position:relative}
 .starline{display:flex;align-items:center;gap:12px;justify-content:center;color:var(--gold);margin-bottom:12px}
@@ -114,8 +115,15 @@ h1,h2,.hero p.lead,p.center{text-wrap:balance}
 /* gift */
 .gift{background:radial-gradient(100% 100% at 80% 0%,#4A5428,#1E2A12);color:var(--cream);overflow:hidden}
 .gift .g{display:grid;gap:30px;align-items:center;grid-template-columns:1fr}
-@media(min-width:800px){.gift .g{grid-template-columns:1.3fr 1fr}}
+@media(min-width:800px){.gift .g{grid-template-columns:1.05fr 1fr}}
 .gift h2{color:#FFF9EC}
+.gsteps{display:grid;gap:10px;margin-bottom:24px;counter-reset:g}
+.gsteps div{position:relative;padding:10px 14px 10px 54px;background:#ffffff0f;border:1px solid #D49A2A44;border-radius:12px;font-size:16px}
+.gsteps div:before{counter-increment:g;content:counter(g);position:absolute;left:14px;top:9px;width:28px;height:28px;border-radius:50%;background:var(--amber);color:var(--ink);display:grid;place-items:center;font-weight:700}
+.gsteps b{color:#FFF9EC}
+.gcard{margin:0;animation:float 5s ease-in-out infinite}
+.gcard img{width:100%;height:auto;display:block;border-radius:16px;box-shadow:0 0 0 2px #D49A2A88,0 24px 50px #000a,0 0 60px #D49A2A33;transform:rotate(-2deg)}
+.gcard figcaption{text-align:center;font-size:14px;color:#E3D3A8;margin-top:12px}
 .giftbox{width:min(260px,70%);margin:0 auto;animation:float 4s ease-in-out infinite}
 @keyframes float{50%{transform:translateY(-12px)}}
 .bow{transform-origin:130px 62px;animation:bow 3.2s ease-in-out infinite}
@@ -175,9 +183,9 @@ footer img{height:40px;margin:0 auto 8px}
   <h1>Decode who you are.<br><span>Design how you live in 2027.</span></h1>
   <p class="lead">Everyone is born with their own nature. Start the new year by understanding yours, then live in line with it, week by week.</p>
   <div class="count" id="count">
-   <div><b id="d1">25</b><span>days left to give a Christmas gift</span></div>
    <div><b id="d2">43</b><span>days left on the offer</span></div>
   </div>
+  <p class="ends">Offer ends 7 January 2027</p>
   <a class="btn" href="#offers">See the two ways to begin</a>
  </div>
 </section>
@@ -201,7 +209,7 @@ footer img{height:40px;margin:0 auto 8px}
    </table>
    <div class="pricebox"><div class="lbl">Your price now</div><div class="price">£150</div><span class="save">You save £102 · 40% off</span></div>
    <a class="btn" href="https://www.staynatural.world/decod-you" target="_top">Start my journey</a>
-   <p class="note">Only 10 places starting in January. Available until 7 January 2027. After the 3 months, membership continues at £19 a month unless you stop it.</p></div>
+   <p class="note">Only 10 places, starting in January. After the 3 months, membership continues at £19 a month unless you stop it.</p></div>
   <div class="card"><span class="badge"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><use href="#i-star"/></svg> New Year plan</span>
    <svg class="ico big" viewBox="0 0 48 48"><use href="#i-lotus"/></svg>
    <small>A full year of support</small>
@@ -216,7 +224,7 @@ footer img{height:40px;margin:0 auto 8px}
    </table>
    <div class="pricebox"><div class="lbl">Your price now</div><div class="price">£228</div><span class="save">You save £539 · 70% off</span></div>
    <a class="btn" href="https://www.staynatural.world/pricing-plans/list" target="_top">Choose the yearly plan</a>
-   <p class="note">One payment, no automatic renewal. Only 20 places. Available until 7 January 2027.</p></div>
+   <p class="note">One payment, no automatic renewal. Only 20 places.</p></div>
  </div>
 </div></section>
 
@@ -243,21 +251,20 @@ footer img{height:40px;margin:0 auto 8px}
 </div></section>
 
 <!-- GIFT -->
-<section class="gift"><div class="snow" id="snow2"></div><div class="wrap g">
+<section class="gift" id="gift"><div class="snow" id="snow2"></div><div class="wrap g">
  <div>
   <span class="tag"><svg class="ico" viewBox="0 0 24 24" style="width:16px;height:16px"><use href="#i-gift"/></svg> Christmas gift</span>
-  <h2>Give clarity for 2027</h2>
-  <p style="max-width:34em;margin-bottom:22px">Give someone you care about the Decode You journey. Add your own message. We send a beautiful gift card on 25 December or 1 January, and it stays valid for 12 months.</p>
-  <a class="btn gold" href="mailto:support@staynatural.co.in?subject=Gift%20Decode%202027&body=Recipient%20name%3A%0ARecipient%20email%3A%0AMy%20message%3A%0AGift%20date%20(25%20Dec%20or%201%20Jan)%3A">Gift the journey · £150</a>
-  <p class="note" style="color:#E3D3A8">Gift orders by 20 December arrive in time for Christmas.</p>
+  <h2>Give someone a clearer 2027</h2>
+  <p style="max-width:34em;margin-bottom:22px">Give a friend or family member the Decode You journey. We design a gift card with their name and your message, and email it to them in your name.</p>
+  <div class="gsteps">
+   <div><b>Send us the details.</b> Their name and email, your name and your message.</div>
+   <div><b>Pay £150 securely.</b> We reply with a secure payment link.</div>
+   <div><b>We send the card.</b> By email, on 25 December or 1 January, as you choose.</div>
+  </div>
+  <a class="btn gold" href="mailto:yogawithsurya@outlook.com?subject=Gift%20Decode%202027&body=Recipient%20name%3A%0ARecipient%20email%3A%0AYour%20name%3A%0AMy%20message%3A%0AGift%20date%20(25%20Dec%20or%201%20Jan)%3A">Order a gift · £150</a>
+  <p class="note" style="color:#E3D3A8">Order by 20 December for Christmas. The gift card is valid for 12 months.</p>
  </div>
- <svg class="giftbox" viewBox="0 0 260 260" aria-hidden="true">
-  <rect x="40" y="110" width="180" height="125" rx="8" fill="#B8501B"/>
-  <rect x="30" y="86" width="200" height="34" rx="8" fill="#D2602A"/>
-  <rect x="116" y="86" width="28" height="149" fill="#F3C86A"/>
-  <g class="bow"><path d="M130 86C95 30 55 44 70 70c10 18 45 18 60 16zM130 86c35-56 75-42 60-16-10 18-45 18-60 16z" fill="#F3C86A" stroke="#D49A2A" stroke-width="3"/><circle cx="130" cy="84" r="12" fill="#D49A2A"/></g>
-  <g fill="#F3C86A"><path d="M214 40l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/><path d="M40 60l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></g>
- </svg>
+ <figure class="gcard"><img src="/new/img/gift-card-sample.webp" alt="Sample gift card: a gift for Charlotte, from Oliver" width="1200" height="800" loading="lazy"><figcaption>Sample gift card</figcaption></figure>
 </div></section>
 
 <section class="guide"><div class="wrap g">
@@ -271,7 +278,7 @@ footer img{height:40px;margin:0 auto 8px}
  <details><summary>What happens after the 3 months of membership?</summary><p>Membership continues at £19 a month unless you stop it. We remind you before the 3 months end, and you can cancel anytime.</p></details>
  <details><summary>Is the yearly plan a subscription?</summary><p>No. It is one payment for 12 months, with no automatic renewal.</p></details>
  <details><summary>Are there any promises about results?</summary><p>No. This is guidance and support for understanding yourself better. It does not replace medical advice.</p></details>
- <details><summary>How does a gift work?</summary><p>You choose the recipient and write a message. They receive a gift card by email, then contact us to start their journey, within 12 months.</p></details>
+ <details><summary>How does a gift work?</summary><p>You send us their name, their email and your message, and pay through a secure link we send you. We email them a designed gift card in your name on 25 December or 1 January. They then contact us to start their journey, any time within 12 months.</p></details>
 </div></section>
 
 <!-- NEW YEAR FINALE -->
@@ -281,7 +288,7 @@ footer img{height:40px;margin:0 auto 8px}
   <span class="tag"><svg class="ico" viewBox="0 0 24 24" style="width:16px;height:16px"><use href="#i-star"/></svg> Happy New Year</span>
   <div class="year">2027</div>
   <h2>Begin it decoded.</h2>
-  <p style="margin-bottom:24px">Limited places. Offer ends 7 January 2027.</p>
+  <p style="margin-bottom:24px">Limited places. Choose your first step.</p>
   <div class="endbtns"><a class="btn" href="https://www.staynatural.world/decod-you" target="_top">Start my journey · £150</a><a class="btn gold" href="https://www.staynatural.world/pricing-plans/list" target="_top">Choose the yearly plan · £228</a></div>
  </div>
 </section>
@@ -296,8 +303,8 @@ footer img{height:40px;margin:0 auto 8px}
  for(var i=0;i<16;i++){var n=document.createElementNS("http://www.w3.org/2000/svg","svg");n.setAttribute("viewBox","0 0 24 24");n.innerHTML='<use href="#i-star"/>';n.style.cssText="left:"+Math.random()*96+"%;top:"+(8+Math.random()*80)+"%;animation-delay:-"+Math.random()*3+"s;width:"+(10+Math.random()*14)+"px;height:"+(10+Math.random()*14)+"px";st.appendChild(n)}
  document.querySelectorAll(".fw").forEach(function(f,k){for(var j=0;j<14;j++){var r=document.createElement("i");r.style.setProperty("--a",(j*360/14)+"deg");r.style.animationDelay=(k*1.1)+"s";f.appendChild(r)}});
  function days(t){return Math.max(0,Math.ceil((t-new Date())/864e5))}
- var a=new Date("2026-12-20T23:59:00"),b=new Date("2027-01-07T23:59:00");
- var da=days(a);document.getElementById("d1").textContent=da;if(da===0)document.getElementById("d1").parentNode.style.display="none";document.getElementById("d2").textContent=days(b);
+ var b=new Date("2027-01-07T23:59:00");
+ document.getElementById("d2").textContent=days(b);
 })();
 </script>
 </body></html>
