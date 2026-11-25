@@ -84,6 +84,17 @@ section{padding:60px 0;position:relative}
 .card li{padding:6px 0 6px 28px;position:relative}
 .card li svg{position:absolute;left:0;top:10px;width:18px;height:18px;color:var(--gold)}
 .note{font-size:14px;color:var(--mute);margin-top:12px}
+h1,h2,.hero p.lead,p.center{text-wrap:balance}
+.vt{width:100%;border-collapse:collapse;margin:16px 0 6px;font-size:16px}
+.vt td{padding:9px 0;border-bottom:1px dashed var(--line);vertical-align:top}
+.vt td:last-child{text-align:right;font-weight:600;white-space:nowrap;padding-left:12px}
+.vt .inc td:last-child{color:var(--olive)}
+.vt .tot td{border-bottom:0;padding-top:12px;font-weight:700;font-size:17px}
+.vt .tot s{color:var(--mute);text-decoration-thickness:2px}
+.pricebox{background:linear-gradient(180deg,#FFF3D1,#FBE6B0);border:2px solid var(--gold);border-radius:18px;padding:14px 16px 16px;margin:10px 0 18px;text-align:center}
+.pricebox .lbl{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.pricebox .price{font-size:58px;line-height:1.05;margin:2px 0 8px}
+.save{display:inline-block;background:linear-gradient(90deg,#D49A2A,#F3C86A,#D49A2A);color:var(--ink);font-weight:700;font-size:17px;padding:7px 20px;border-radius:999px;box-shadow:0 4px 14px #D49A2A55}
 
 /* why start (icons) */
 .why{background:linear-gradient(180deg,#F3E6C4,#FAF1DC)}
@@ -165,7 +176,7 @@ footer img{height:40px;margin:0 auto 8px}
   <p class="lead">Everyone is born with their own nature. Start the new year by understanding yours, then live in line with it, week by week.</p>
   <div class="count" id="count">
    <div><b id="d1">25</b><span>days left to give a Christmas gift</span></div>
-   <div><b id="d2">43</b><span>days left to begin 2027</span></div>
+   <div><b id="d2">43</b><span>days left on the offer</span></div>
   </div>
   <a class="btn" href="#offers">See the two ways to begin</a>
  </div>
@@ -175,39 +186,37 @@ footer img{height:40px;margin:0 auto 8px}
 <section id="offers"><div class="wrap">
  <div class="starline"><svg class="ico" viewBox="0 0 24 24" style="width:22px;height:22px"><use href="#i-star"/></svg></div>
  <h2 class="center">Two ways to begin 2027</h2>
- <p class="center" style="margin:0 auto 34px;max-width:36em">Whether you already know Stay Natural or you are starting fresh, there is a clear first step.</p>
+ <p class="center" style="margin:0 auto 34px;max-width:36em">Two clear ways to start the year, with your saving shown on each.</p>
  <div class="cards">
   <div class="card"><span class="badge"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><use href="#i-gift"/></svg> Makes a lovely gift</span>
    <svg class="ico big" viewBox="0 0 48 48"><use href="#i-target"/></svg>
-   <small>For new people</small>
+   <small>Clarity and a plan for 2027</small>
    <h3>Decode You journey</h3>
    <p>A clear picture of your life, your direction and how to live well in 2027.</p>
-   <div class="price">£180</div>
-   <ul>
-    <li><svg class="ico" viewBox="0 0 24 24"><use href="#i-check"/></svg>3 personal sessions with Surya</li>
-    <li><svg class="ico" viewBox="0 0 24 24"><use href="#i-check"/></svg>In-depth personal life analysis</li>
-    <li><svg class="ico" viewBox="0 0 24 24"><use href="#i-check"/></svg>Comprehensive written report</li>
-    <li><svg class="ico" viewBox="0 0 24 24"><use href="#i-check"/></svg>Personalised Ayurvedic diet and wellness protocol</li>
-    <li><svg class="ico" viewBox="0 0 24 24"><use href="#i-check"/></svg>Tailored remedies and action plan</li>
-    <li><svg class="ico" viewBox="0 0 24 24"><use href="#i-check"/></svg>3 months of Stay Natural membership included</li>
-   </ul>
+   <table class="vt">
+    <tr><td>1 personal session with Surya × 3<br><small style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--mute);font-size:14px">£65 each</small></td><td>£195</td></tr>
+    <tr class="inc"><td>In-depth life analysis, written report, Ayurvedic diet and wellness protocol, tailored remedies and action plan</td><td>Included</td></tr>
+    <tr><td>3 months of Stay Natural membership<br><small style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--mute);font-size:14px">£19 × 3</small></td><td>£57</td></tr>
+    <tr class="tot"><td>Total value</td><td><s>£252</s></td></tr>
+   </table>
+   <div class="pricebox"><div class="lbl">Your price now</div><div class="price">£150</div><span class="save">You save £102 · 40% off</span></div>
    <a class="btn" href="https://www.staynatural.world/decod-you" target="_top">Start my journey</a>
    <p class="note">Only 10 places starting in January. Available until 7 January 2027. After the 3 months, membership continues at £19 a month unless you stop it.</p></div>
   <div class="card"><span class="badge"><svg class="ico" viewBox="0 0 24 24" style="width:14px;height:14px"><use href="#i-star"/></svg> New Year plan</span>
    <svg class="ico big" viewBox="0 0 48 48"><use href="#i-lotus"/></svg>
-   <small>For people who know Stay Natural</small>
+   <small>A full year of support</small>
    <h3>2027 Yearly</h3>
    <p>One payment. A full year of support, with no monthly bills.</p>
-   <div class="price">£228<s>worth £767</s></div>
-   <ul>
-    <li><svg class="ico" viewBox="0 0 24 24"><use href="#i-check"/></svg>Sunday Reset live every week for 12 months</li>
-    <li><svg class="ico" viewBox="0 0 24 24"><use href="#i-check"/></svg>3 Life Counselling sessions</li>
-    <li><svg class="ico" viewBox="0 0 24 24"><use href="#i-check"/></svg>5 Personal Wellness Sessions</li>
-    <li><svg class="ico" viewBox="0 0 24 24"><use href="#i-check"/></svg>1 Decode You workshop</li>
-    <li><svg class="ico" viewBox="0 0 24 24"><use href="#i-check"/></svg>One payment, no automatic renewal</li>
-   </ul>
+   <table class="vt">
+    <tr><td>3 Life Counselling sessions<br><small style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--mute);font-size:14px">£65 × 3</small></td><td>£195</td></tr>
+    <tr><td>5 Personal Wellness Sessions<br><small style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--mute);font-size:14px">£65 × 5</small></td><td>£325</td></tr>
+    <tr><td>Sunday Reset live every week, 12 months<br><small style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--mute);font-size:14px">£19 × 12</small></td><td>£228</td></tr>
+    <tr><td>1 Decode You workshop</td><td>£19</td></tr>
+    <tr class="tot"><td>Total value</td><td><s>£767</s></td></tr>
+   </table>
+   <div class="pricebox"><div class="lbl">Your price now</div><div class="price">£228</div><span class="save">You save £539 · 70% off</span></div>
    <a class="btn" href="https://www.staynatural.world/pricing-plans/list" target="_top">Choose the yearly plan</a>
-   <p class="note">Only 20 places. Available until 7 January 2027.</p></div>
+   <p class="note">One payment, no automatic renewal. Only 20 places. Available until 7 January 2027.</p></div>
  </div>
 </div></section>
 
@@ -226,7 +235,7 @@ footer img{height:40px;margin:0 auto 8px}
 <section><div class="wrap">
  <h2 class="center">How it works</h2>
  <div class="steps" style="margin-top:26px">
-  <div><b>Choose your first step.</b> The journey if you are new, the yearly plan if you already know us.</div>
+  <div><b>Choose your first step.</b> The journey for clarity and a plan, or the yearly plan for a full year of support.</div>
   <div><b>Book your sessions.</b> Everything is online, so you can join from anywhere in the UK, Ireland or beyond.</div>
   <div><b>Receive your plan.</b> Your report and action plan are kept in your private space.</div>
   <div><b>Live it, week by week.</b> Join Sunday Reset every Sunday at 8:00 a.m. UK time.</div>
@@ -239,7 +248,7 @@ footer img{height:40px;margin:0 auto 8px}
   <span class="tag"><svg class="ico" viewBox="0 0 24 24" style="width:16px;height:16px"><use href="#i-gift"/></svg> Christmas gift</span>
   <h2>Give clarity for 2027</h2>
   <p style="max-width:34em;margin-bottom:22px">Give someone you care about the Decode You journey. Add your own message. We send a beautiful gift card on 25 December or 1 January, and it stays valid for 12 months.</p>
-  <a class="btn gold" href="mailto:support@staynatural.co.in?subject=Gift%20Decode%202027&body=Recipient%20name%3A%0ARecipient%20email%3A%0AMy%20message%3A%0AGift%20date%20(25%20Dec%20or%201%20Jan)%3A">Gift the journey · £180</a>
+  <a class="btn gold" href="mailto:support@staynatural.co.in?subject=Gift%20Decode%202027&body=Recipient%20name%3A%0ARecipient%20email%3A%0AMy%20message%3A%0AGift%20date%20(25%20Dec%20or%201%20Jan)%3A">Gift the journey · £150</a>
   <p class="note" style="color:#E3D3A8">Gift orders by 20 December arrive in time for Christmas.</p>
  </div>
  <svg class="giftbox" viewBox="0 0 260 260" aria-hidden="true">
@@ -273,11 +282,11 @@ footer img{height:40px;margin:0 auto 8px}
   <div class="year">2027</div>
   <h2>Begin it decoded.</h2>
   <p style="margin-bottom:24px">Limited places. Offer ends 7 January 2027.</p>
-  <div class="endbtns"><a class="btn" href="https://www.staynatural.world/decod-you" target="_top">Start my journey · £180</a><a class="btn gold" href="https://www.staynatural.world/pricing-plans/list" target="_top">Choose the yearly plan · £228</a></div>
+  <div class="endbtns"><a class="btn" href="https://www.staynatural.world/decod-you" target="_top">Start my journey · £150</a><a class="btn gold" href="https://www.staynatural.world/pricing-plans/list" target="_top">Choose the yearly plan · £228</a></div>
  </div>
 </section>
 </main>
-<footer><div class="wrap"><img src="/new/img/logo-light.png" alt="Stay Natural" width="76" height="40"><div>Stay Natural · www.staynatural.world</div></div></footer>
+<footer><div class="wrap"><img src="/new/img/logo-light.png" alt="Stay Natural" width="76" height="40"><div>Stay Natural · <a href="https://www.staynatural.world" style="color:inherit">www.staynatural.world</a></div></div></footer>
 
 <script>
 (function(){
@@ -288,7 +297,7 @@ footer img{height:40px;margin:0 auto 8px}
  document.querySelectorAll(".fw").forEach(function(f,k){for(var j=0;j<14;j++){var r=document.createElement("i");r.style.setProperty("--a",(j*360/14)+"deg");r.style.animationDelay=(k*1.1)+"s";f.appendChild(r)}});
  function days(t){return Math.max(0,Math.ceil((t-new Date())/864e5))}
  var a=new Date("2026-12-20T23:59:00"),b=new Date("2027-01-07T23:59:00");
- document.getElementById("d1").textContent=days(a);document.getElementById("d2").textContent=days(b);
+ var da=days(a);document.getElementById("d1").textContent=da;if(da===0)document.getElementById("d1").parentNode.style.display="none";document.getElementById("d2").textContent=days(b);
 })();
 </script>
 </body></html>
