@@ -141,12 +141,45 @@ h1,h2,.hero p.lead,p.center{text-wrap:balance}
 .ms .priceline{text-align:center;color:var(--amber);font-size:18px;margin:0 auto 18px}
 .ms .ctr{text-align:center}
 .ms .fine{text-align:center;font-size:14px;color:#E3D3A8;margin:14px auto 0}
-.phone{width:min(290px,100%);margin:0 auto;border:3px solid #D49A2A;border-radius:34px;padding:18px 14px 14px;background:#FAF1DC;color:var(--ink);box-shadow:0 24px 50px #000a,0 0 60px #D49A2A33;transform:rotate(1.5deg)}
-.phone .hi{font-family:Fraunces,serif;font-size:21px;color:var(--olive);margin-bottom:10px}
-.phone .row{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:8px;font-size:14px;display:flex;justify-content:space-between;align-items:center;gap:8px}
-.phone .row small{display:block;color:var(--mute);font-size:12px}
-.phone .row i{font-style:normal;background:var(--ember);color:#fff;border-radius:999px;padding:3px 12px;font-size:12px;font-weight:600}
-.phone .cap{text-align:center;font-size:11px;color:var(--mute);margin-top:6px}
+/* My Space gallery of real screens */
+.ms .top{display:block;text-align:center;max-width:44em;margin:0 auto 38px}
+.ms .top p{margin-left:auto;margin-right:auto}
+.ms .tag{display:inline-flex;align-items:center;gap:6px}
+.shots{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:26px 22px 34px;margin:0 -20px 10px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.shots::-webkit-scrollbar{display:none}
+@media(min-width:900px){.shots{overflow:visible;justify-content:center;padding:30px 0 40px;margin:0 0 10px;gap:26px}}
+.shot{flex:0 0 232px;scroll-snap-align:center;text-align:center}
+@media(min-width:900px){.shot{flex:0 0 228px}.shot:nth-child(even){transform:translateY(34px)}}
+.dev{position:relative;border-radius:34px;padding:7px;background:linear-gradient(160deg,#3a4a22,#0d1306);box-shadow:0 0 0 2px #D49A2A,0 26px 46px #000b,0 0 50px #D49A2A30;margin-bottom:16px}
+.dev::before{content:"";position:absolute;top:11px;left:50%;width:62px;height:6px;margin-left:-31px;border-radius:6px;background:#0d1306;z-index:2;opacity:.85}
+.dev img{display:block;width:100%;height:auto;border-radius:28px;aspect-ratio:390/780;object-fit:cover;object-position:top}
+.shot b{display:block;font-family:Fraunces,serif;font-size:19px;color:#FFF9EC;margin-bottom:3px}
+.shot span{display:block;font-size:14.5px;color:#EADFC0;line-height:1.45;padding:0 4px}
+.shotnote{text-align:center;font-size:13px;color:#C9BC95;margin:6px auto}
+@media(min-width:900px){.shotnote{margin-top:30px}}
+.ms .grp{display:flex;align-items:center;gap:14px}
+.ms .grp::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,#D49A2A88,transparent)}
+.ms .ci{position:relative;background:linear-gradient(165deg,#ffffff1c,#ffffff08);border:1px solid #D49A2A66;border-radius:20px;padding:18px 18px 16px;box-shadow:0 10px 24px #0005}
+.ms .ci svg{width:46px;height:46px;padding:9px;border-radius:50%;background:#D49A2A22;border:1px solid #D49A2A88;margin-bottom:10px}
+.ms .cg.me .ci{background:linear-gradient(165deg,#D49A2A30,#ffffff08);border-color:#F3C86A88}
+@media(max-width:619px){.ms .cg{grid-template-columns:1fr 1fr;gap:10px}.ms .ci{padding:14px 12px 12px;border-radius:16px}.ms .ci svg{width:40px;height:40px;padding:8px;margin-bottom:8px}.ms .ci b{font-size:17px}.ms .ci span{font-size:14px;line-height:1.4}}
+/* premium cards on green */
+.ms .ci{background:linear-gradient(170deg,#FFFBF0 0%,#F7E9C8 100%);border:1px solid #F3C86A;border-radius:20px;padding:20px 18px 16px;box-shadow:0 14px 30px #0007,inset 0 1px 0 #fff;overflow:hidden;transition:transform .25s}
+.ms .ci:hover{transform:translateY(-4px)}
+.ms .ci::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,#B8501B,#D49A2A)}
+.ms .ci svg{background:linear-gradient(145deg,#C9601F,#B8501B);border:0;color:#FFF3D6;box-shadow:0 6px 14px #B8501B55;margin-bottom:12px}
+.ms .ci b{color:var(--forest)}
+.ms .ci span{color:#5A5336}
+.ms .ci .tg{display:inline-block;font-style:normal;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8A3B10;background:#B8501B1c;border-radius:999px;padding:3px 10px;margin:0 0 8px;position:absolute;top:18px;right:14px}
+.ms .cg.me .ci{background:linear-gradient(160deg,#F9D985 0%,#E0A73A 55%,#C98A1E 100%);border-color:#FFE29A;box-shadow:0 16px 34px #0009,inset 0 1px 0 #fff8}
+.ms .cg.me .ci::before{background:linear-gradient(90deg,#1E2A12,#4A5428)}
+.ms .cg.me .ci svg{background:linear-gradient(145deg,#2d3c18,#1E2A12);color:var(--amber);box-shadow:0 6px 14px #1E2A1266}
+.ms .cg.me .ci b{color:#1B230E}
+.ms .cg.me .ci span{color:#3a3213}
+.ms .cg.me .ci .tg{color:#F3C86A;background:#1E2A12}
+@media(max-width:619px){.ms .ci .tg{font-size:9.5px;padding:2px 8px;top:14px;right:10px;letter-spacing:.08em}}
+.swipe{display:none;text-align:center;font-size:13px;color:#C9BC95;margin:-8px auto 6px}
+@media(max-width:899px){.swipe{display:block}}
 .faqg{font-family:"DM Sans",sans-serif;font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ember);margin:30px 0 10px}
 details ul{margin:8px 0 0 20px}
 .gcard{margin:0;animation:float 5s ease-in-out infinite}
@@ -295,28 +328,28 @@ footer img{height:40px;margin:0 auto 8px}
    <p>Most people don&rsquo;t fall short for lack of knowledge. They fall short because nobody stays beside them once the session ends. With My Space, someone does: through the busy weeks, the quiet ones and every season of the year.</p>
    <p>My Space is your private home inside Stay Natural. One link, and it opens like an app on your phone or laptop.</p>
   </div>
-  <div class="phone" aria-hidden="true">
-   <div class="hi">Good morning</div>
-   <div class="row"><div>Sunday Reset<small>This Sunday · 8:00 a.m. UK</small></div><i>Join</i></div>
-   <div class="row"><div>Monthly theme<small>Your focus for the month</small></div></div>
-   <div class="row"><div>Today&rsquo;s check-in<small>Daily</small></div><i>Open</i></div>
-   <div class="row"><div>Made for you<small>Food, routines, mantras, movement</small></div></div>
-   <div class="cap">Illustrative preview of My Space</div>
-  </div>
  </div>
- <h3 class="grp">Every week, for every member</h3>
+ <div class="shots" role="group" aria-label="Screens from My Space">
+  <figure class="shot"><div class="dev"><img src="/new/img/ms-sunday.webp" alt="My Space on a phone: the next Sunday Reset with a join button, and the monthly theme" width="390" height="780" loading="lazy"></div><b>Your Sunday Reset</b><span>The date, the join button, and the time in your own time zone.</span></figure>
+  <figure class="shot"><div class="dev"><img src="/new/img/ms-progress.webp" alt="My Space on a phone: the monthly theme and progress ring with a daily check-in" width="390" height="780" loading="lazy"></div><b>Your month at a glance</b><span>A theme for the month, a daily check-in and a gentle progress ring.</span></figure>
+  <figure class="shot"><div class="dev"><img src="/new/img/ms-reports.webp" alt="My Space on a phone: your personal Life Report and Wellness Report" width="390" height="780" loading="lazy"></div><b>Your personal reports</b><span>A Life Report and a Wellness Report, written for your own nature.</span></figure>
+  <figure class="shot"><div class="dev"><img src="/new/img/ms-addphone.webp" alt="My Space on a phone: steps to keep My Space like an app on your home screen" width="390" height="780" loading="lazy"></div><b>Opens like an app</b><span>Save it to your home screen once. One tap, no browser bars.</span></figure>
+ </div>
+ <p class="swipe">Swipe to see more →</p>
+ <p class="shotnote">Real screens from My Space</p>
+ <h3 class="grp"><span>Every week, for every member</span></h3>
  <div class="cg">
-  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-lotus"/></svg><b>Live Sunday Reset</b><span>Every Sunday, 8:00 a.m. UK time. Breathe, stretch, chant and sit quietly together, to close the week and open the next. Your weekly practice.</span></div>
-  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-play"/></svg><b>Monthly recordings</b><span>Missed a Sunday? Catch up with the recording.</span></div>
-  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-cal"/></svg><b>A theme for each month</b><span>One clear focus, explored through the sessions.</span></div>
-  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-heart"/></svg><b>Daily check-in</b><span>A daily moment to stay in touch with yourself.</span></div>
+  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-lotus"/></svg><em class="tg">Every Sunday</em><b>Live Sunday Reset</b><span>Every Sunday, 8:00 a.m. UK time. Breathe, stretch, chant and sit quietly together, to close the week and open the next. Your weekly practice.</span></div>
+  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-play"/></svg><em class="tg">Every month</em><b>Monthly recordings</b><span>Missed a Sunday? Catch up with the recording.</span></div>
+  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-cal"/></svg><em class="tg">Every month</em><b>A theme for each month</b><span>One clear focus, explored through the sessions.</span></div>
+  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-heart"/></svg><em class="tg">Every day</em><b>Daily check-in</b><span>A daily moment to stay in touch with yourself.</span></div>
  </div>
  <h3 class="grp">Made only for you, once you have decoded your nature with Surya</h3>
- <div class="cg">
-  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-bowl"/></svg><b>Food guidance</b><span>In the Ayurvedic way, for your body.</span></div>
-  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-sun"/></svg><b>Daily and seasonal routines</b><span>So your days move with the year.</span></div>
-  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-wave"/></svg><b>Mantras</b><span>Chosen for you.</span></div>
-  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-figure"/></svg><b>Body movements</b><span>Designed for you.</span></div>
+ <div class="cg me">
+  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-bowl"/></svg><em class="tg">Just for you</em><b>Food guidance</b><span>In the Ayurvedic way, for your body.</span></div>
+  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-sun"/></svg><em class="tg">Just for you</em><b>Daily and seasonal routines</b><span>So your days move with the year.</span></div>
+  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-wave"/></svg><em class="tg">Just for you</em><b>Mantras</b><span>Chosen for you.</span></div>
+  <div class="ci"><svg viewBox="0 0 48 48"><use href="#i-figure"/></svg><em class="tg">Just for you</em><b>Body movements</b><span>Designed for you.</span></div>
  </div>
  <p class="closer">Not just knowing who you are. Living it, all year. That is what makes 2027 different.</p>
  <p class="priceline">The 2027 Yearly: £228 for the whole year, less than £4.40 a week.</p>
