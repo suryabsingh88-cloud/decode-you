@@ -136,6 +136,20 @@ footer img{height:40px;display:block;margin:0 auto 8px}
  body{padding-bottom:0}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+
+.sf{background:var(--sfbg,#343C2B);color:#EADFC0;padding:48px 24px 28px;font-size:15px;text-align:left}
+.sf .in{max-width:1100px;margin:0 auto}
+.sf-top{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:36px}
+.sf-brand img{height:44px;width:auto;display:block;margin:0 0 14px}
+.sf-brand p{margin:0;font-size:15px;line-height:1.6;color:#EADFC0;max-width:300px}
+.sf h4{margin:0 0 10px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D7A943;font-weight:600}
+.sf ul{list-style:none;margin:0;padding:0}
+.sf li a{color:#EADFC0;display:inline-block;padding:9px 0;min-height:44px;box-sizing:border-box;text-decoration:none;font-weight:500}
+.sf li a:hover,.sf li a:focus-visible{color:#F3C86A;text-decoration:underline}
+.sf-bot{margin-top:32px;padding-top:20px;border-top:1px solid #ffffff26;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:13px;color:#C9BB93}
+.sf-bot a{color:inherit}
+@media(max-width:820px){.sf-top{grid-template-columns:1fr 1fr;gap:24px}.sf-brand{grid-column:1/-1}.sf{padding:40px 22px 24px}}
+@media(max-width:480px){.sf-top{grid-template-columns:1fr}.sf{padding-bottom:86px}}
 </style></head><body>
 
 <div class="offer" id="offer">Christmas &amp; New Year offer: this journey is <b>£150</b> instead of £180, with 3 months of membership added. Limited places. <a href="/2027">See the offer</a></div>
@@ -293,9 +307,25 @@ footer img{height:40px;display:block;margin:0 auto 8px}
 
 <div class="bar" id="bar"><span>£180 · Decode You journey</span><a class="btn gold" href="https://www.staynatural.world/decod-you" target="_top">Begin</a></div>
 
-<footer><img src="/new/img/logo-light.png" alt="Stay Natural" width="76" height="40"><p class="ft">Understand your nature. Make choices that work with it.</p>
-<nav class="fl" aria-label="Explore Stay Natural"><a href="/workshop">Decode You workshop</a><a href="/sunday-reset">Sunday Reset</a><a href="/membership">Membership</a><a href="https://www.staynatural.world" target="_top">Stay Natural</a></nav>
-<div class="fc">Stay Natural · <a href="https://www.staynatural.world" style="color:inherit">www.staynatural.world</a></div></footer>
+<footer class="sf" style="--sfbg:#343C2B"><div class="in">
+ <div class="sf-top">
+  <div class="sf-brand"><img src="/new/img/logo-light.png" alt="Stay Natural" width="76" height="40"><p>Understand your nature. Make choices that work with it.</p></div>
+  <nav aria-label="Decode You"><h4>Decode You</h4><ul>
+   <li><a href="/workshop">Decode You workshop</a></li>
+   <li><a href="/decode-you-journey">3-session personal journey</a></li>
+   <li><a href="/2027">Decode 2027 offer</a></li></ul></nav>
+  <nav aria-label="Membership"><h4>Membership</h4><ul>
+   <li><a href="/membership">Membership</a></li>
+   <li><a href="/membership-plans">Monthly or yearly plans</a></li>
+   <li><a href="/sunday-reset">Sunday Reset</a></li></ul></nav>
+  <nav aria-label="Stay Natural"><h4>Stay Natural</h4><ul>
+   <li><a href="https://www.staynatural.world" target="_top">Home</a></li>
+   <li><a href="https://www.staynatural.world/service-page/life-counselling" target="_top">Life Counselling</a></li>
+   <li><a href="https://www.staynatural.world/testimonials" target="_top">Testimonials</a></li>
+   <li><a href="mailto:yogawithsurya@outlook.com">Contact us</a></li></ul></nav>
+ </div>
+ <div class="sf-bot"><span>© 2026 Stay Natural</span><a href="https://www.staynatural.world" target="_top">www.staynatural.world</a></div>
+</div></footer>
 
 <script>
 (function(){
