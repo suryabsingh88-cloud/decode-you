@@ -1,0 +1,25 @@
+name: Save reel voiceover
+on:
+  push:
+    paths:
+      - '.github/workflows/fetch-voice.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download voiceover
+        run: |
+          mkdir -p reel
+          curl -fL --retry 3 -o reel/decode-2027-voiceover.mp3 "https://elevenlabsusercontent.com/database/workspace/6319e11214204e66abca438d8993e648/content_generation/uqzPCQbeAGu5HBsfpdq6/GoMjzO8g3iLNHyZoS1K9/content.mp3?Expires=1795698000&KeyName=assets-cdn-key-1&Signature=FfVDofBU7y6_2nCDEPBHjp_DMWI="
+          ls -l reel/decode-2027-voiceover.mp3
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add reel/decode-2027-voiceover.mp3
+          git commit -m "Add Decode 2027 reel voiceover (Surya cloned voice, 42s)"
+          git push
